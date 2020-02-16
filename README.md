@@ -6,6 +6,8 @@
 * 支持10.15系统（更新到10.15.3）
 * 加入DW1820a的device property驱动，可以支持apple watch自动解锁 
 * 加入屏蔽PM981补丁
+* 已定制USB。
+* CPU Friend 配置源自[goofysun](https://github.com/goofysun/y9000x-4k-macos)。
 
 ## 引导说明
 由于用Clover引导常常出现进入Windows后无法驱动声卡的情况，因此更换为OpenCore引导。与此同时，OpenCore对Windows的引导支持不是很好（数次卡在Windows锁屏界面），因此采用rEFInd统一引导，开机后用rEFInd的图形化界面选择需要进入的系统。
