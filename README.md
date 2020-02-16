@@ -1,4 +1,5 @@
 # Y9000X-Hackintosh-FHD-OpenCore
+
 ---
 
 # EFI信息
@@ -28,7 +29,7 @@
 * 如果加了驱动却不生效：终端输入`kextstat | grep -v com.apple`查看已加载驱动
 * 如果不是使用DW1820A这块网卡的话，先进BIOS关闭无线网卡，进入系统了再更换驱动
 
-#参考链接
+# 参考链接
 *  https://github.com/hsd815/Y9000X-4K-hackintosh
 *  https://github.com/programbw/y9000x
 *  https://github.com/WangRicky/Y9000X-HACKINTOSH
