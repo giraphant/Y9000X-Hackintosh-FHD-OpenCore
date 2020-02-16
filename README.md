@@ -1,7 +1,5 @@
 # Y9000X-Hackintosh-FHD-OpenCore
 
----
-
 # EFI信息
 * 配置:FHD / i7 9750H / 32G / RC500+PM981 / DW1820A
 * Open Core引导（0.55版本）
