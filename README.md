@@ -9,14 +9,15 @@
 * 已定制USB。
 * CPU Friend 配置源自[goofysun](https://github.com/goofysun/y9000x-4k-macos)。
 
-## 引导说明
-由于用Clover引导常常出现进入Windows后无法驱动声卡的情况，因此更换为OpenCore引导。与此同时，OpenCore对Windows的引导支持不是很好（数次卡在Windows锁屏界面），因此采用rEFInd统一引导，开机后用rEFInd的图形化界面选择需要进入的系统。
-
 ## 前期准备
 * **更换硬盘**：pm981a无法安装黑苹果，我添加了一块RC500。由于有pm981存在，系统非常不稳定随时死机重启。必须拆下三星的这块硬盘或者屏蔽这块硬盘。
 * **更换网卡为`DW1820a`**：我按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的教程对这块网卡做了屏蔽。
 * 切换硬盘模式为 `AHCI`
 * 关闭`secure boot`
+
+## 引导说明
+由于用Clover引导常常出现进入Windows后无法驱动声卡的情况，因此更换为OpenCore引导。与此同时，OpenCore对非BootCamp安装的Windows的引导支持不是很好（数次卡在Windows锁屏界面），因此采用rEFInd统一引导，开机后用rEFInd的图形化界面选择需要进入的系统。如此则开机后Mac用OpenCore引导，Windows则为原生引导，不改变各自的引导方式，较为稳定。
+为此，需将引导分区从pm981a改至新增的硬盘，并参考此处提供的EFI结构重建引导分区。
 
 ## 工作
 * 显示相关：显示 背光 硬件加速 睡眠 雷电转HDMI（机型需为14,1）
