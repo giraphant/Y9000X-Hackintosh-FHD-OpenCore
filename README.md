@@ -2,8 +2,8 @@
 
 ## EFI信息
 * 配置:FHD / i7 9750H / 32G / RC500+PM981 / DW1820A
-* Open Core引导（0.55版本）
-* 支持10.15系统（更新到10.15.3）
+* Open Core引导（0.59版本）
+* 支持10.15系统（更新到10.15.5）
 * 加入DW1820a的device property驱动，可以支持apple watch自动解锁 
 * 加入屏蔽PM981补丁
 * 已定制USB。
